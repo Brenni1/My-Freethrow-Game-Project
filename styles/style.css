@@ -74,7 +74,7 @@ html {
 #targetArea {
   position: absolute;
   width: 20vw;
-  max-width: 75px;
+  max-width: 50px;
   background-color: green;
   top: 50%;
   left: 50%;
@@ -85,7 +85,7 @@ html {
   position: absolute;
   left: 0px;
   width: 10vw;
-  max-width: 75px;
+  max-width: 50px;
   max-height: 45px;
 }
 

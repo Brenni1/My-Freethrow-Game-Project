@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Freethrow Game</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <div id="startScreen" class="screen">
+      <h1>Welcome to my Freethrow Game</h1>
+      <button id="easyButton" class="difficultyButton">Easy</button>
+      <button id="mediumButton" class="difficultyButton">Medium</button>
+      <button id="hardButton" class="difficultyButton">Hard</button>
+      <button id="instructionsButton">Instructions</button>
+      <ul id="startScreenHighScores" class="highScoresList"></ul>
+      <!-- Display high scores on start screen -->
+    </div>
+
+    <div id="instructionsScreen" class="screen" style="display: none">
+      <p>Click the Throw Button when the Bar is in the green Area to hit the Shot. The Difficulty modifies the speed of the moving Ball.</p>
+      <button id="hideInstructionsButton">Hide Instructions</button>
+    </div>
+    <div id="gameScreen" class="screen" style="display: none">
+      <div id="gameContainer">
+        <div id="targetArea"></div>
+        <img src="./images/basketball.png" id="movingBar" alt="Moving Bar" />
+      </div>
+      <button id="throwStartButton">Start the Animation</button>
+      <button id="throwButton">Throw</button>
+      <div id="result"></div>
+      <div>Score: <span id="score">0</span></div>
+      <div>Attempts Left: <span id="attempts">3</span></div>
+    </div>
+
+    <div id="gameOverScreen" class="screen" style="display: none">
+      <h2>Game Over!</h2>
+      <p id="finalScore">Final Score: 0</p>
+      <p id="totalAttempts">Total Attempts: 0</p>
+      <ul id="gameOverHighScores" class="highScoresList"></ul>
+      <!-- Display high scores on game over screen -->
+      <button id="restartGameButton">Restart Game</button>
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
